@@ -1,0 +1,46 @@
+$ cd ..
+
+admne_000@toshiba1 MINGW64 ~
+$ mkdir doc1 ; cd doc1
+
+admne_000@toshiba1 MINGW64 ~
+$ vi learn_github1a.txt
+
+github.com/new (new repo)
+<owner>/doc1
+[Create repository]
+...
+https://github.com/bwork18/doc1.git
+or
+(for SSH) git@github.com:bwork18/doc1.git
+Get started by creating a new file or uploading an existing file. We recommend every repository include a README, LICENSE, and .gitignore
+
+
+
+...or create a new repository on the command line
+echo "# doc1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"     #..error
+$ git config --global user.name bwork18
+$ git config --global user.email "budi.work.18@outlook.com"
+$ git commit -m "first commit"   #..ok
+
+git remote add origin git@github.com:bwork18/doc1.git
+git push -u origin master   #err
+
+$ cd
+$ ssh-keygen -t rsa -b 4096 -C "budi.work.18@outlook.com"
+admne_000@toshiba1 MINGW64 ~/.ssh
+$ ls -lat
+-rw-r--r-- 1 admne_000 197618  750 May 12 11:28 id_rsa.pub
+-rw-r--r-- 1 admne_000 197618 3389 May 12 11:28 id_rsa
+
+
+https://help.github.com/en/articles/connecting-to-github-with-ssh
+https://help.github.com/en/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
+https://help.github.com/en/articles/adding-a-new-ssh-key-to-your-github-account
+
+$ git push -u origin master  #ok
+$ add learn_github1a.txt
+$ git commit -m "add learn_github1a.txt"
