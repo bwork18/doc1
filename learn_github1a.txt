@@ -47,4 +47,7 @@ $ git commit -m "add learn_github1a.txt"
 $ git push
 
 refresh https://github.com/bwork18/doc1 : has new file
+#edit learn_github1a.txt
+$ git diff
+...diff output...
 
