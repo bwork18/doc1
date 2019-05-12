@@ -47,7 +47,7 @@ $ git commit -m "add learn_github1a.txt"
 $ git push
 
 refresh https://github.com/bwork18/doc1 : has new file
-#edit learn_github1a.txt
-$ git diff
-...diff output...
+#git add learn_github1a.txt ; git commit -m "mymod" ; git diff  #always blank diff output
+#edit learn_github1a.txt   ; git diff   #has diff output
+
 
